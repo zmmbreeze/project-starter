@@ -17,10 +17,12 @@ module.exports = {
     },
     less: {
         src: src + '/css/*.{less,css}',
+        watchSrc: src + '/css/**/*.{less,css}',
         dest: dest + '/css'
     },
     markup: {
         src: src + '/**/*.{mustache, html}',
+        partialDir: src + '/partials/',
         dest: dest,
         data: {}
     },
